@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Carousel from '../components/Carousel';
 import Navbar from '../components/Navbar';
@@ -38,12 +38,16 @@ const Home = () => {
 
           <div className="row">
             <div className="col-lg-3">
-              <SideMenu />
+              <SideMenu
+                appName={"Bootstrap example"}
+                testClick={() => { console.log('clicked') }}
+                count={count}
+              />
             </div>
             <div className="col-lg-9">
               <Carousel />
               <div className="row">
-                <MovieList />
+                <MovieList count={count} />
               </div>
             </div>
           </div>

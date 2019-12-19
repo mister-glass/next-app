@@ -6,9 +6,7 @@ class MovieList extends React.Component {
       <React.Fragment>
 
         <div>
-          <h1 className="d-block">{this.state.count}</h1>
-          <button onClick={this.incNumber} className="btn btn-primary mr-2">[+] Inc number</button>
-          <button onClick={this.decNumber} className="btn btn-danger">[-] Dec number</button>
+          <h1 className="d-block">{this.props.count}</h1>
         </div>
 
         <div className="col-lg-4 col-md-6 mb-4">
